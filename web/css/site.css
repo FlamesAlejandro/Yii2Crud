@@ -50,6 +50,10 @@ a.desc:after {
     color: #999;
 }
 
+.navbackground {
+    background-color: #e3f2fd;
+}
+
 .error-summary {
     color: #a94442;
     background: #fdf7f7;
