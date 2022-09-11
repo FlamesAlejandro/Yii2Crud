@@ -17,9 +17,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Create Product', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+
+    <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="../web/resources/products.png" alt="" width="72" height="57">
+        <h2>Listado de Productos</h2>
+        <p class="lead">Vista en general de los productos creados. Funcionalidad de editar, ver y eliminar productos.</p>
+        <?= Html::a('Crear Producto', ['create'], ['class' => 'btn btn-success']) ?>
+    </div>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
@@ -32,7 +36,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'name',
             'description',
-            'image',
+            [
+                'format'=>'html',
+                'value'=>function($data){ return Html::img($data->image, ['width'=>'90px']); }, 
+            ]
+            ,
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Product $model, $key, $index, $column) {

@@ -22,9 +22,9 @@ class m220910_233527_database_tables extends Migration
         $this->batchInsert('products', ['name', 'description', 'image'],
         [
             ['Gaming PC','PC Gamer con muchas lucesitas y adaptada para los juegos de ultima generación.','resources/gamingpc.png'],
-            ['Celular Nokia','Celular resistente adaptado para todo tipo de golpes.','resources/nokia.jgp'],
-            ['Playstation 5','Consola de última generación de Sony','resources/ps5.jgp'],
-            ['Steam Deck','Consola portátil creada por valve, juega tus juegos favoritos de steam donde quieras.','resources/steamdeck.jgp'],
+            ['Celular Nokia','Celular resistente adaptado para todo tipo de golpes.','resources/nokia.jpg'],
+            ['Playstation 5','Consola de última generación de Sony','resources/ps5.jpg'],
+            ['Steam Deck','Consola portátil creada por valve, juega tus juegos favoritos de steam donde quieras.','resources/steamdeck.jpg'],
             ['Nintendo Switch','Consola híbrida creada por nintendo, gran portabilidad con una buena potencia de juego.','resources/switch.png'],
             ['Volante para PC','Disfruta de todos tus juegos de carrera con un Volante de carreras para PC y consolas.','resources/volante.png'],
             ['VR HEADSET','La realidad virtual ya está aquí, utiliza un Vr Set y disfruta de gran variedad de experiencias nuevas.','resources/vrset.png'],

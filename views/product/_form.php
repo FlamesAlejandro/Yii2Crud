@@ -50,7 +50,7 @@ use yii\widgets\ActiveForm;
 
                 <hr class="my-4">
                                 
-                <?= Html::submitButton('Crear producto', ['class' => 'w-100 btn btn-primary btn-lg']) ?>
+                <?= Html::submitButton('Guardar producto', ['class' => 'w-100 btn btn-primary btn-lg']) ?>
 
             </form>
         </div>
