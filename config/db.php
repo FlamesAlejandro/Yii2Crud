@@ -1,8 +1,16 @@
 <?php
 
 return [
+
+    // Para enviar 
+    // 'class' => 'yii\db\Connection',
+    // 'dsn' => 'mysql:host=localhost;dbname=crudalejandro',
+    // 'username' => 'root',
+    // 'password' => '',
+    // 'charset' => 'utf8',
+
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
+    'dsn' => 'mysql:host=localhost;port=3307;dbname=crudalejandro',
     'username' => 'root',
     'password' => '',
     'charset' => 'utf8',
