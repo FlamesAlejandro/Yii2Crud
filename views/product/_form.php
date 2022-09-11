@@ -40,12 +40,12 @@ use yii\widgets\ActiveForm;
 
                 <h4 class="mb-3">Imagen de producto</h4>
                 
-                <div class="col-12">
+                <div class="col-12" class="form-control">
 
-                    <label for="address2" class="form-label">Imagen <span class="text-muted">(Optional)</span></label>
-                    <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                    <label for="imagefile" class="form-label">Ejemplo de entrada de archivo predeterminado</label>
+                    <?= Html::img( $model->image, ['width'=>'100px'] ); ?>                 
 
-                    <?= $form->field($model, 'image')->textInput(['maxlength' => true]) ?>
+                    <?= $form->field($model, 'imagefile')->fileInput() ?>
                 </div>
 
                 <hr class="my-4">

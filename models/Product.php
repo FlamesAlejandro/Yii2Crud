@@ -14,9 +14,9 @@ use Yii;
  */
 class Product extends \yii\db\ActiveRecord
 {
-    /**
-     * {@inheritdoc}
-     */
+    // dejar publico donde se va guardar el archivo imagen
+    public $imagefile;
+
     public static function tableName()
     {
         return 'products';
@@ -27,10 +27,11 @@ class Product extends \yii\db\ActiveRecord
      */
     public function rules()
     {
+        // Image almacenara la url de la imagen, y imagefile guardara la imagen en la carpeta resources
         return [
             [['name', 'description'], 'required'],
             [['name', 'description'], 'string', 'max' => 255],
-            [['image'], 'string', 'max' => 2500],
+            [['imagefile'], 'file', 'extensions'=>'jpg , png'],
         ];
     }
 
@@ -43,7 +44,7 @@ class Product extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Name',
             'description' => 'Description',
-            'image' => 'Image',
+            'imagefile' => 'Image',
         ];
     }
 }
