@@ -47,7 +47,6 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '@w
                 ['label' => 'Mantenedor CRUD', 'url' => ['/product/index']]
             ):("")            
             ,
-            ['label' => 'About', 'url' => ['/site/about']],
             Yii::$app->user->isGuest
                 ? ['label' => 'Ingresar', 'url' => ['/site/login']]
                 : '<li class="nav-item">'

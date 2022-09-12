@@ -15,9 +15,21 @@ class ProductController extends Controller
 {
     public function behaviors()
     {
+        // Solo bloqueamos el acceso a ventanas de administración, las vistas publicas lo siguen siendo.
         return array_merge(
             parent::behaviors(),
             [
+                'access'=>[
+                    'class'=>AccessControl::className(),
+                    'only'=>['index','view','create','update','delete'],
+                    'rules'=>[
+                        [
+                            'allow'=>true,                            
+                            'roles'=>['@']
+                        ],
+                    ],
+                ]
+                ,
                 'verbs' => [
                     'class' => VerbFilter::className(),
                     'actions' => [
@@ -30,13 +42,19 @@ class ProductController extends Controller
 
     public function actionIndex()
     {
-        $searchModel = new ProductSearch();
-        $dataProvider = $searchModel->search($this->request->queryParams);
+        try {
+            $searchModel = new ProductSearch();
+            $dataProvider = $searchModel->search($this->request->queryParams);
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+            return $this->render('index', [
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
+            ]);
+        }
+        catch(Exception $e){
+            return $this->render('site/index');
+        }
+        
     }
 
     public function actionView($id)
@@ -133,7 +151,7 @@ class ProductController extends Controller
                     }
 
                     //Asignar un nombre a la imagen, usando time para un nombre unico
-                    $filePath='resources/'.time().'_'.$model->imagefile->baseName.'.'.$model->imagefile->extension;
+                    $filePath='uploads/'.time().'_'.$model->imagefile->baseName.'.'.$model->imagefile->extension;
 
                     if($model->imagefile->saveAs($filePath)){
 

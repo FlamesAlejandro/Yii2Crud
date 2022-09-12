@@ -27,7 +27,7 @@ class Product extends \yii\db\ActiveRecord
      */
     public function rules()
     {
-        // Image almacenara la url de la imagen, y imagefile guardara la imagen en la carpeta resources
+        // Image almacenara la url de la imagen, y imagefile guardara la imagen en la carpeta uploads
         return [
             [['name', 'description'], 'required'],
             [['name', 'description'], 'string', 'max' => 255],
