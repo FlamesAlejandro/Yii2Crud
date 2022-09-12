@@ -32,7 +32,7 @@ $this->title = 'My Yii Application';
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
                 <div class="card">
-                    <img src="../web/resources/xbox.png" class="card-img-top object-fit" height="400" >
+                    <img src="../web/resources/xbox.png" class="card-img-top" height="400" >
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -42,7 +42,7 @@ $this->title = 'My Yii Application';
             </div>
             <div class="col" width="100%" height="200">
                 <div class="card" width="100%" height="200">
-                    <img src="../web/resources/ps5.jpg" class="card-img-top object-fit" height="400">
+                    <img src="../web/resources/ps5.jpg" class="card-img-top" height="400">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

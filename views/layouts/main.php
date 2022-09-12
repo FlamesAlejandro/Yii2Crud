@@ -40,7 +40,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '@w
         'options' => ['class' => 'navbar-nav'],
         'items' => [
             ['label' => 'Inicio', 'url' => ['/site/index']],
-            ['label' => 'Productos', 'url' => ['/site/products']],
+            ['label' => 'Productos', 'url' => ['/product/list']],
             ['label' => 'About', 'url' => ['/site/about']],
             // Solo mostrar a usuarios logueados
             (!Yii::$app->user->isGuest)?(

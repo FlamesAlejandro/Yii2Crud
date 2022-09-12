@@ -52,6 +52,7 @@ a.desc:after {
 
 .grid-view th {
     white-space: nowrap;
+    
 }
 
 .hint-block {
@@ -96,3 +97,5 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+

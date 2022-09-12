@@ -33,19 +33,20 @@ class ProductSearch extends Product
 
     /**
      * Creates data provider instance with search query applied
-     *
      * @param array $params
-     *
      * @return ActiveDataProvider
      */
+
     public function search($params)
     {
         $query = Product::find();
 
         // add conditions that should always apply here
 
+        // paginación
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination'=>['pageSize'=>6 ]
         ]);
 
         $this->load($params);

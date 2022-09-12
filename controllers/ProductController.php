@@ -46,6 +46,13 @@ class ProductController extends Controller
         ]);
     }
 
+    public function actionViewpublic($id)
+    {
+        return $this->render('viewpublic', [
+            'model' => $this->findModel($id),
+        ]);
+    }
+
     public function actionCreate()
     {
         $model = new Product();
@@ -93,10 +100,11 @@ class ProductController extends Controller
     }
 
     public function actionList(){
+
         $model = Product::find();
 
         $pagination = new Pagination([
-            'defaultPageSize'=>4,
+            'defaultPageSize'=>6,
             'totalCount'=>$model->count()
         ]);
 
