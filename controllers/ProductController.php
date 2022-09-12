@@ -150,4 +150,14 @@ class ProductController extends Controller
             $model->loadDefaultValues();
         }
     }
+
+    public function actionBtnproduct()
+    {
+        return $this->redirect(['list']);
+    }
+
+    public function actionBtnhome()
+    {
+        return $this->redirect(['site/index']);
+    }
 }

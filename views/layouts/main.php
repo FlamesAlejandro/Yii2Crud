@@ -41,12 +41,13 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '@w
         'items' => [
             ['label' => 'Inicio', 'url' => ['/site/index']],
             ['label' => 'Productos', 'url' => ['/product/list']],
-            ['label' => 'About', 'url' => ['/site/about']],
+            
             // Solo mostrar a usuarios logueados
             (!Yii::$app->user->isGuest)?(
-                ['label' => 'Mantenedor', 'url' => ['/administrador/index']]
+                ['label' => 'Mantenedor CRUD', 'url' => ['/product/index']]
             ):("")            
             ,
+            ['label' => 'About', 'url' => ['/site/about']],
             Yii::$app->user->isGuest
                 ? ['label' => 'Ingresar', 'url' => ['/site/login']]
                 : '<li class="nav-item">'

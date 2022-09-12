@@ -10,10 +10,10 @@ use yii\bootstrap5\Html;
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-login">
+<div class="site-login container">
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>Please fill out the following fields to login:</p>
+    <p>Porfavor complete los siguientes campos para loguearse:</p>
 
     <?php $form = ActiveForm::begin([
         'id' => 'login-form',
@@ -42,8 +42,14 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php ActiveForm::end(); ?>
 
-    <div class="offset-lg-1" style="color:#999;">
-        You may login with <strong>admin/admin</strong> or <strong>demo/demo</strong>.<br>
-        To modify the username/password, please check out the code <code>app\models\User::$users</code>.
-    </div>
+    <br />
+
+    <p>
+        Puede loguear con <strong>admin/admin</strong> o <strong>demo/demo</strong>.<br>
+        Ambos están definidos para esta demostración y tienen acceso al CRUD <code>app\models\User::$users</code>.
+    </p>
+
+    
 </div>
+
+

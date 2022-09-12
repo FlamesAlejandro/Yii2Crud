@@ -125,4 +125,14 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionBtnproduct()
+    {
+        return $this->redirect(['product/list']);
+    }
+
+    public function actionBtnhome()
+    {
+        return $this->redirect(['product/index']);
+    }
 }

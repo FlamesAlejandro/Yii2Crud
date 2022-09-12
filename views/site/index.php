@@ -1,5 +1,8 @@
 <?php
 
+use yii\helpers\Html;
+use yii\helpers\Url;
+
 /** @var yii\web\View $this */
 
 $this->title = 'My Yii Application';
@@ -10,11 +13,13 @@ $this->title = 'My Yii Application';
         <img class="d-block mx-auto mb-4" src="../web/resources/products.png" alt="" width="150" height="120">
         <h1 class="display-5 fw-bold">Tienda de productos</h1>
         <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Bienvenido a nuestra tienda "Inserte nombre generico" de productos. Puede revisar nuestro listado completo de mercadería en la ventana de productos o haciendo click en el primero botón. 
-            Segundo Botón es el mantenedor de productos, necesita estar ingresado con cuenta de administrador</p>
+        <p class="lead mb-4">Bienvenido a nuestra tienda. 
+            Puede revisar todos los productos ingresados en la ventana de productos haciendo click en el primer botón.</p>
+            <p class="lead mb-4"> 
+            El segundo Botón es el mantenedor de productos, en el se encuentra el CRUD y un listado más personalizado. Necesita iniciar sesión para poder ver el botón</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Ver productos</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Mantenedor</button>
+            <?= Html::a('Ver productos', ['btnproduct'], ['class' => 'btn btn-primary btn-lg px-4 gap-3']) ?>
+            <?= Html::a('Mantenedor', ['btnhome'], ['class' => 'btn btn-success btn-lg px-4']) ?>
         </div>
         </div>
     </div>
