@@ -26,8 +26,7 @@ $this->title = 'Lista productos';
                     </div>
                     <div class="card-body" style="align-content:center">
                         <h5 class="card-title"><?= Html::encode("{$product->name}"); ?></h5>
-                        <br />
-                        <!-- <p class="card-text" style="height:100;"><?= Html::encode("{$product->description}"); ?></p> -->
+                        <br />                        
                         <?= Html::a('Ver detalle producto', ['viewpublic','id' => $product->id], ['class' => 'btn btn-primary']) ?>
                     </div>
                 </div>

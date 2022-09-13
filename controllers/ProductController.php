@@ -42,6 +42,7 @@ class ProductController extends Controller
 
     public function actionIndex()
     {
+        // Mostramos la tablas de productos
         try {
             $searchModel = new ProductSearch();
             $dataProvider = $searchModel->search($this->request->queryParams);
@@ -59,6 +60,7 @@ class ProductController extends Controller
 
     public function actionView($id)
     {
+        // Vista privada
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
@@ -66,6 +68,7 @@ class ProductController extends Controller
 
     public function actionViewpublic($id)
     {
+        // Vista publica
         return $this->render('viewpublic', [
             'model' => $this->findModel($id),
         ]);
@@ -119,6 +122,7 @@ class ProductController extends Controller
 
     public function actionList(){
 
+        // Esta es la lista privada
         $model = Product::find();
 
         $pagination = new Pagination([
