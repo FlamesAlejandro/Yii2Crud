@@ -30,7 +30,7 @@ class Product extends \yii\db\ActiveRecord
         // Image almacenara la url de la imagen, y imagefile guardara la imagen en la carpeta uploads
         return [
             [['name', 'description'], 'required'],
-            [['name', 'description'], 'string', 'max' => 40],
+            [['name', 'description'], 'string', 'max' => 50],
             [['imagefile'], 'file', 'extensions'=>'jpg , png'],
         ];
     }
