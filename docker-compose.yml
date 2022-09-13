@@ -1,6 +1,6 @@
 version: '2'
 services:
-  php:
+  phpyii2:
     container_name: 'crudyii2_alejandro'
     image: yiisoftware/yii2-php:8.0-apache
     volumes:
@@ -26,7 +26,6 @@ services:
     image: 'phpmyadmin/phpmyadmin'
     depends_on:
       - mysql
-    restart: always
     ports:
       - '8081:80'
     environment:
