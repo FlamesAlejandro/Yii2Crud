@@ -8,7 +8,7 @@ $this->title = 'Lista productos';
 <div class="site-index">
 
     <div class="px-2 py-3 my-3 text-center">
-        <img class="d-block mx-auto mb-4" src="../web/resources/products.png" alt="" width="150" height="120">
+        <img class="d-block mx-auto mb-4" src="resources/products.png" alt="" width="150" height="120">
         <h1 class="display-5 fw-bold">Productos</h1>
         <p class="lead mb-4">Listado de productos.</p>
     </div>

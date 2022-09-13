@@ -11,7 +11,7 @@ use yii\widgets\ActiveForm;
 <div class="product-form">
 
     <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="../web/resources/products.png" alt="" width="72" height="57">
+        <img class="d-block mx-auto mb-4" src="resources/products.png" alt="" width="72" height="57">
         <h2>Formulario</h2>
         <p class="lead">En este formulario puede ingresar y modificar productos.</p>
     </div>

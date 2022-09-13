@@ -32,7 +32,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '@w
 <header id="header">
     <?php
     NavBar::begin([
-        'brandLabel' => '<img src="../web/resources/3718330.png" style="width:50px;"/> Tienda Productos',
+        'brandLabel' => '<img src="resources/3718330.png" style="width:50px;"/> Tienda Productos',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => ['class' => 'navbar-expand-md navbar-light fixed-top','style'=>'background-color: #5FA6F1'],
     ]);

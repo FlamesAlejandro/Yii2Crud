@@ -10,7 +10,7 @@ $this->title = 'My Yii Application';
 <div class="site-index">
 
     <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="../web/resources/products.png" alt="" width="150" height="120">
+        <img class="d-block mx-auto mb-4" src="resources/products.png" alt="" width="150" height="120">
         <h1 class="display-5 fw-bold">Tienda de productos</h1>
         <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">Bienvenido a nuestra tienda. 
@@ -27,7 +27,7 @@ $this->title = 'My Yii Application';
     <hr />
 
     <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="../web/resources/gith.png" alt="" width="150" height="120">
+        <img class="d-block mx-auto mb-4" src="resources/gith.png" alt="" width="150" height="120">
         <h1 class="display-5 fw-bold">Proyecto productos</h1>
         <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">Proyecto basado en PHP con Yii2, Diseño en Bootstrap5</p>
