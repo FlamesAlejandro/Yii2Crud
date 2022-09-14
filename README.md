@@ -26,13 +26,18 @@ Descargas
 
 Instalación
 ------------
-Lo primero es crear los contenedores con sus imágenes y también aplicar la migración de información para la base de datos, para ello ejecutamos los siguientes comandos en la terminal del `proyecto`,
+Lo primero es crear los contenedores con sus imágenes, para ello ejecutamos los siguientes comandos en la terminal del `proyecto`:
 
 ~~~
-sh start.sh
+sh install.sh
 ~~~
 
-Cuando se ejecute la migración, solo se debe poner `Yes` para que aplique la inserción de datos
+Una vez que instalamos las imagenes, se tiene que aplicar la `migración` de información a la base de datos, para ello ejecutamos el siguiente comando en la terminal del proyecto:
+
+~~~
+docker exec -i crudyii2_alejandro php yii migrate/up
+~~~
+
 
 
 **Sobre mí:** 
