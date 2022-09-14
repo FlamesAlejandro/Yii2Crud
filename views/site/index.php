@@ -16,7 +16,7 @@ $this->title = 'My Yii Application';
         <p class="lead mb-4">Bienvenido a nuestra tienda. 
             Puede revisar todos los productos ingresados en la ventana de productos haciendo click en el primer botón.</p>
             <p class="lead mb-4"> 
-            El segundo Botón es el mantenedor de productos, en el se encuentra el CRUD y un listado más personalizado. Necesita iniciar sesión para poder ver el botón</p>
+            El segundo Botón es el mantenedor de productos, en el se encuentra el CRUD y un listado más personalizado. Necesita iniciar sesión para poder usar el botón</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <?= Html::a('Ver productos', ['btnproduct'], ['class' => 'btn btn-primary btn-lg px-4 gap-3']) ?>
             <?= Html::a('Mantenedor', ['btnhome'], ['class' => 'btn btn-success btn-lg px-4']) ?>
